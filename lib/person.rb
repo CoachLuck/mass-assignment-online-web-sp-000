@@ -4,6 +4,6 @@ class Person
    :pant_width
 
    def initialize(params)
-     params.each {|key, val| self.send("#{key=}", val)}
+     params.each {|key, val| self.send("#{key}=", val)}
    end
 end
